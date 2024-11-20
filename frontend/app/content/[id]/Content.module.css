@@ -1,0 +1,22 @@
+/* Catalog.module.css */
+.container {
+    padding-left: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+}
+
+.taskItem {
+    padding-left: 20px;
+}
+
+.taskText {
+    padding-left: 20px;
+}
+
+.hipItem {
+    padding-left: 20px;
+}

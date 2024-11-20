@@ -1,0 +1,22 @@
+/* components/Catalog.module.css */
+
+.moduleContainer {
+    margin-left: 20px; /* Отступ слева для каждого модуля */
+  }
+  
+  .moduleTitle {
+    margin-left: 10px; /* Отступ слева для заголовка модуля */
+  }
+  
+  .moduleDescription {
+    margin-left: 10px; /* Отступ слева для описания модуля */
+  }
+  
+  .contentsList {
+    margin-left: 20px; /* Отступ слева для списка содержимого */
+  }
+  
+  .contentItem {
+    margin-left: 10px; /* Отступ слева для каждого элемента содержимого */
+  }
+  
