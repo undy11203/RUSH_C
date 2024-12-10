@@ -54,26 +54,26 @@ export default function Catalog() {
         }
     }, [id]);
 
-    const replaceImageSources = (html: string, images: string[]): string => {
-        // Создаем временный элемент, чтобы парсить HTML-строку
-        const div = document.createElement('div');
-        div.innerHTML = html;
-        const imgElements = div.getElementsByTagName('img');
+    // const replaceImageSources = (html: string, images: string[]): string => {
+    //     // Создаем временный элемент, чтобы парсить HTML-строку
+    //     const div = document.createElement('div');
+    //     div.innerHTML = html;
+    //     const imgElements = div.getElementsByTagName('img');
 
-        Array.from(imgElements).forEach((img) => {
-            const src = img.getAttribute('src');
-            if (src && src.includes('?')) {
-                // Заменяем src на первое изображение из массива
-                img.setAttribute('src', images[0]); // или можно использовать подходящий индекс из images
-            }
-        });
-        return div.innerHTML; // Возвращаем обновленный HTML
-    };
-    const renderedText = content ? replaceImageSources(content.text, content.image) : '';
+    //     Array.from(imgElements).forEach((img) => {
+    //         const src = img.getAttribute('src');
+    //         if (src && src.includes('?')) {
+    //             // Заменяем src на первое изображение из массива
+    //             img.setAttribute('src', images[0]); // или можно использовать подходящий индекс из images
+    //         }
+    //     });
+    //     return div.innerHTML; // Возвращаем обновленный HTML
+    // };
+    // const renderedText = content ? replaceImageSources(content.text, content.image) : '';
 
-    const renderImage = (src: string) => {
-        return src.startsWith('data:image/') ? src : `${src}`;
-    };
+    // const renderImage = (src: string) => {
+    //     return src.startsWith('data:image/') ? src : `${src}`;
+    // };
 
     if (error) return <div>{error}</div>;
     if (!content) return null; // Если data is null
