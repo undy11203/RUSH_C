@@ -1,4 +1,4 @@
 package org.project.backend.models;
 
-public class ArticleMapper {
+public class Article {
 }
